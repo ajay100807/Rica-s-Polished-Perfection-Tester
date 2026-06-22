@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Appointment | Rica's Polished Perfection</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+Rica's Polished Perfection
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="gallery.html">Gallery</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="booking-section">
+
+<div class="booking-container">
+
+<h1>
+
+Book Your Appointment
+
+</h1>
+
+<p>
+
+Reserve your preferred date and time.
+
+</p>
+
+<form>
+
+<div class="form-group">
+
+<label>Full Name</label>
+
+<input
+type="text"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Email Address</label>
+
+<input
+type="email"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Mobile Number</label>
+
+<input
+type="tel"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Select Service</label>
+
+<select required>
+
+<option value="">
+Choose Service
+</option>
+
+<option>
+Nail Removal
+</option>
+
+<option>
+Soft Gel Extension
+</option>
+
+<option>
+Hard Gel Overlay
+</option>
+
+<option>
+Gel Polish
+</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Design Level</label>
+
+<select required>
+
+<option>
+Plain
+</option>
+
+<option>
+Medium
+</option>
+
+<option>
+Advanced
+</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Upload Nail Inspiration
+(Optional)
+
+</label>
+
+<input
+type="file"
+accept="image/*">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Appointment Date
+
+</label>
+
+<input
+type="date"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Time Slot
+
+</label>
+
+<select required>
+
+<option>
+
+1PM - 3PM
+
+</option>
+
+<option>
+
+3PM - 5PM
+
+</option>
+
+<option>
+
+5PM - 7PM
+
+</option>
+
+</select>
+
+</div>
+
+<div class="booking-policy">
+
+<h3>
+
+Booking Policies
+
+</h3>
+
+<ul>
+
+<li>
+₱150 Reservation Fee Required
+</li>
+
+<li>
+No Cancellation
+</li>
+
+<li>
+One Free Reschedule
+</li>
+
+<li>
+Reschedule Allowed 48 Hours Before Appointment
+</li>
+
+<li>
+Arrive 15 Minutes Early
+</li>
+
+<li>
+10 Minutes Late = ₱100 Fee
+</li>
+
+</ul>
+
+</div>
+
+<button type="submit">
+
+Continue
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+</body>
+
+</html>
