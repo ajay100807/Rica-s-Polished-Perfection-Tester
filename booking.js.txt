@@ -1,0 +1,133 @@
+const serviceSelect =
+document.getElementById("service");
+
+const designLevel =
+document.getElementById("designLevel");
+
+const servicePrice =
+document.getElementById("servicePrice");
+
+const remainingBalance =
+document.getElementById("remainingBalance");
+
+const RESERVATION_FEE = 150;
+
+const prices = {
+
+softgel: {
+plain: 399,
+medium: 549,
+advanced: 699
+},
+
+hardgel: {
+plain: 299,
+medium: 449,
+advanced: 599
+},
+
+gelpolish: {
+plain: 249,
+medium: 349,
+advanced: 499
+},
+
+removal: {
+plain: 100,
+medium: 100,
+advanced: 150
+}
+
+};
+
+function updatePrice() {
+
+const service =
+serviceSelect.value;
+
+const level =
+designLevel.value;
+
+if (!service) return;
+
+const price =
+prices[service][level];
+
+servicePrice.textContent =
+`₱${price}`;
+
+remainingBalance.textContent =
+`₱${price - RESERVATION_FEE}`;
+
+}
+
+serviceSelect.addEventListener(
+"change",
+updatePrice
+);
+
+designLevel.addEventListener(
+"change",
+updatePrice
+);
+
+const dateInput =
+document.getElementById(
+"appointmentDate"
+);
+
+const today =
+new Date()
+.toISOString()
+.split("T")[0];
+
+dateInput.min = today;
+
+const bookingForm =
+document.getElementById(
+"bookingForm"
+);
+
+bookingForm.addEventListener(
+"submit",
+function(e){
+
+e.preventDefault();
+
+const booking = {
+
+fullName:
+document.querySelector(
+'input[type="text"]'
+).value,
+
+email:
+document.querySelector(
+'input[type="email"]'
+).value,
+
+mobile:
+document.querySelector(
+'input[type="tel"]'
+).value,
+
+service:
+serviceSelect.value,
+
+design:
+designLevel.value,
+
+date:
+dateInput.value
+
+};
+
+localStorage.setItem(
+"booking",
+JSON.stringify(booking)
+);
+
+window.location.href =
+"summary.html";
+
+});
