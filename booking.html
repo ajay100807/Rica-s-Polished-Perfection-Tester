@@ -87,54 +87,29 @@ required>
 
 <div class="form-group">
 
-<label>Select Service</label>
-
-<select required>
+<select id="service" required>
 
 <option value="">
 Choose Service
 </option>
 
-<option>
+<option value="removal">
 Nail Removal
 </option>
 
-<option>
+<option value="softgel">
 Soft Gel Extension
 </option>
 
-<option>
+<option value="hardgel">
 Hard Gel Overlay
 </option>
 
-<option>
+<option value="gelpolish">
 Gel Polish
 </option>
 
 </select>
-
-</div>
-
-<div class="form-group">
-
-<label>Design Level</label>
-
-<select required>
-
-<option>
-Plain
-</option>
-
-<option>
-Medium
-</option>
-
-<option>
-Advanced
-</option>
-
-</select>
-
 </div>
 
 <div class="form-group">
@@ -170,7 +145,7 @@ required>
 
 <label>
 
-Time Slot
+Available Time Slot
 
 </label>
 
@@ -197,7 +172,30 @@ Time Slot
 </select>
 
 </div>
+<div class="price-summary">
 
+<h3>Estimated Cost</h3>
+
+<p>
+Service Price:
+<span id="servicePrice">
+₱0
+</span>
+</p>
+
+<p>
+Reservation Fee:
+₱150
+</p>
+
+<p>
+Remaining Balance:
+<span id="remainingBalance">
+₱0
+</span>
+</p>
+
+</div>
 <div class="booking-policy">
 
 <h3>
